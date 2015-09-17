@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebDevTool</title>
+
+    <style>
+        * {
+            font-size: 12px;
+            font-weight: normal;
+            font-family: Arial, Verdana;
+            margin:0;
+            padding:1px;
+        }
+
+        #main {
+            padding: 3px;
+
+        }
+
+        h5 {
+            font-weight: bold;
+        }
+
+        input.opt {
+            border: 1px solid #3d3d3d;
+            border-radius: 3px;
+            background-color: #aeaeae;
+            color: #fff;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <section>
+        <h5>Mark DOM elements:</h5>
+        <input class="opt" type="button" id="selectAllTd" value="Select all TD elements">
+        <input class="opt" type="button" id="selectAllTh" value="Select all TH elements">
+    </section>
+
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

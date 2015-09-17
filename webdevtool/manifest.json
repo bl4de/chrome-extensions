@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Sample Dev Tool",
+  "description": "Sample Chrome Dev Tool",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "webdevtool32.png",
+    "default_popup": "popup.html",
+    "default_title": "Open WebDevTool"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "dom.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "icons" : {
+    "16": "webdevtool16.png",
+    "48": "webdevtool48.png",
+    "128": "webdevtool128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://code.jquery.com/jquery-2.1.4.min.js"
+  ]
+}
