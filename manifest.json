@@ -1,0 +1,39 @@
+{
+	"manifest_version": 2,
+	"name": "ReadMode",
+	"description": "Enables read mode for webpage",
+	"version": "1.0.0",
+	"browser_action": {
+		"default_icon": "readmode128.png",
+		"default_title": "Switch to ReadMode"
+	},
+	"permissions": [
+		"http://*/*",
+	    "https://*/*",
+		"tabs"
+	],
+	"background": {
+		"scripts": [
+			"readmode.js",
+			"injected.js"
+		],
+		"persistent": false
+	},
+	//   "content_scripts": [
+	//     {
+	//       "matches": [
+	//         "http://*/*",
+	//         "https://*/*"
+	//       ],
+	//       "js": [
+	//         "readmode.js"
+	//       ],
+	//       "run_at": "document_end"
+	//     }
+	//   ],
+	"icons": {
+		"16": "readmode16.png",
+		"48": "readmode48.png",
+		"128": "readmode128.png"
+	}
+}
