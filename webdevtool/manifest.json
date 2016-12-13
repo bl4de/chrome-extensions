@@ -20,7 +20,7 @@
       "run_at": "document_end"
     }
   ],
-  "icons" : {
+  "icons": {
     "16": "webdevtool16.png",
     "48": "webdevtool48.png",
     "128": "webdevtool128.png"
